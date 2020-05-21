@@ -10,7 +10,7 @@ class FizzBuzz {
             result += "Buzz";
         }
         if (index % 7 == 0){
-            result = "Whizz";
+            result += "Whizz";
         }
         return result.equals("") ? String.valueOf(index) : result;
     }
