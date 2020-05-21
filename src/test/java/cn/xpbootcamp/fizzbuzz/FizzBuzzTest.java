@@ -46,4 +46,10 @@ class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertThat(fizzBuzz.soundOff(35)).isEqualTo("BuzzWhizz");
     }
+
+    @Test
+    void should_return_FizzBuzzWhizz_when_sound_off_given_105 (){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertThat(fizzBuzz.soundOff(105)).isEqualTo("FizzBuzzWhizz");
+    }
 }
