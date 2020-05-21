@@ -9,6 +9,9 @@ class FizzBuzz {
         if (index % 5 == 0){
             result = "Buzz";
         }
+        if (index % 7 == 0){
+            result = "Whizz";
+        }
         return result;
     }
 }
