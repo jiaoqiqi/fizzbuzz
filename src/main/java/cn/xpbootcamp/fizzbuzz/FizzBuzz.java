@@ -2,16 +2,16 @@ package cn.xpbootcamp.fizzbuzz;
 
 class FizzBuzz {
     String soundOff(int index) {
-        String result = String.valueOf(index);
+        String result = "";
         if (index % 3 == 0){
-            result = "Fizz";
+            result += "Fizz";
         }
         if (index % 5 == 0){
-            result = "Buzz";
+            result += "Buzz";
         }
         if (index % 7 == 0){
             result = "Whizz";
         }
-        return result;
+        return result.equals("") ? String.valueOf(index) : result;
     }
 }
