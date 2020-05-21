@@ -4,9 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class FizzBuzzTest {
+class FizzBuzzTest {
     @Test
-    void should_return_number_when_is_has_no_multiples() {
-        assertThat(1).isEqualTo(1);
+    void should_return_2_when_sound_off_given_2 (){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertThat(fizzBuzz.soundOff(2)).isEqualTo("2");
     }
 }
